@@ -53,3 +53,38 @@ export const Github = (props) => {
     )
 }
 
+export const CenterIcon = (props) => {
+    return (
+        //     <svg
+        //     {...props}
+        //     width={100}
+        //     height={100}
+        //     viewBox="0 0 20 20"
+        //     fill="currentColor"
+        //     xmlns="http://www.w3.org/2000/svg"
+        //   >
+        //     <path
+        //       fillRule="evenodd"
+        //       d="M2 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5zm9.5 5.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm-6.354-.354L6.793 8.5 5.146 6.854a.5.5 0 1 1 .708-.708l2 2a.5.5 0 0 1 0 .708l-2 2a.5.5 0 0 1-.708-.708z"
+        //       clipRule="evenodd"
+        //     />
+        //   </svg>
+
+            <svg
+            {...props}
+            width={100}
+            height={100}
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm.93-9.412-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533l1.002-4.705zM10 7.5a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"
+              clipRule="evenodd"
+            />
+          </svg>
+        
+    )
+}
+
