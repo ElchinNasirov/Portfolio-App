@@ -1,18 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
-const Box = styled.div`
+var ReactRotatingText = require('react-rotating-text');
+
+const Box = styled(motion.div)`
 position: absolute;
 left: 50%;
 top: 50%;
 transform: translate(-50%, -50%);
 
 width: 65vw;
-height:55vh;
+height: 55vh;
 display: flex;
 
-background: 
-linear-gradient(
+background: linear-gradient(
     to right,
     ${props => props.theme.body} 50%,
     ${props => props.theme.text} 50%) bottom,
@@ -27,46 +29,33 @@ linear-gradient(
 background-size: 100% 2px;
     border-left: 2px solid ${props => props.theme.body};
     border-right: 2px solid ${props => props.theme.text};
+
     z-index:1;
 `
 
 const SubBox = styled.div`
-border: blue solid 2px;
-
 width: 50%;
 position: relative;
 display: flex;
-
-.pic{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 100%;
-    height: auto;
-}
+justify-content: center;
+align-items: center;
 `
 
 const LeftTextContainer = styled.div`
-border: orange solid 3px;
-
 font-size: calc(1em + 1.5vw);
 color: ${props => props.theme.body};
 padding: 2rem;
 cursor: pointer;
+
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-&>*:last-child{
-    color: ${props => `rgba(${props.theme.bodyRgba},0.6)`};
-    font-size: calc(0.5rem + 1.5vw);
-    font-weight:300;
-}
 `
 
 const RightTextContainer = styled.div`
-border: red solid 3px;
-
+background-color: black;
+width: 35rem;
+height: 4rem;
 font-size: calc(1em + 1.5vw);
 color: ${props => props.theme.text};
 padding: 2rem;
@@ -74,22 +63,40 @@ cursor: pointer;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
-&>*:last-child{
-    color: ${props => `rgba(${props.theme.text},0.6)`};
-    font-size: calc(0.5rem + 1.5vw);
-    font-weight:300;
-}
+
+.react-rotating-text-cursor {
+    animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
+  }
+
+  color(string) {
+
+  }
+  
+  @keyframes blinking-cursor {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 `
 
 const Intro = () => {
     return (
-        <Box>
+        <Box
+            initial={{ height: 0 }}
+            animate={{ height: '55vh' }}
+            transition={{ type: 'spring', duration: 2, delay: 1 }}
+        >
             <SubBox>
 
                 <LeftTextContainer>
-                    <h1>Hi, </h1>
-                    <h3>I'm Elchin</h3>
-                    <h6> Full Stack Web Developer</h6>
+                    <h1>Hi,</h1>
+                    <h3>I'm <b>Elchin</b></h3>
                 </LeftTextContainer>
 
             </SubBox>
@@ -97,9 +104,7 @@ const Intro = () => {
             <SubBox>
 
                 <RightTextContainer>
-                    <h1>Hi, </h1>
-                    <h3>I'm Elchin</h3>
-                    <h6> Full Stack Web Developer</h6>
+                    <ReactRotatingText items={['Full Stack Web Developer', "Front End Web Developer", "Software Engineer"]} color="green" />
                 </RightTextContainer>
 
             </SubBox>

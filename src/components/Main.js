@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
+import { motion } from "framer-motion";
 import Logo from "../subComponents/Logo";
 import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
@@ -140,41 +141,97 @@ const Main = () => {
                 </CenterContainer>
 
                 <ContactContainer target="_blank" to={{ pathname: "mailto:nasirov.elchin@gmail.com" }}>
-                    <h3>
+                    <motion.h3
+                        initial={{
+                            y: -200,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        animate={{
+                            y: 0,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+
+                    >
                         Say "Hi.."
-                    </h3>
+                    </motion.h3>
                 </ContactContainer>
 
                 <BlogContainer to="/blog">
-                    <h3>
+                    <motion.h2
+                        initial={{
+                            y: -200,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        animate={{
+                            y: 0,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         Blog
-                    </h3>
+                    </motion.h2>
                 </BlogContainer>
 
                 <WorkContainer click={clicked} to="/work">
-                    <h3>
+                    <motion.h2
+                        initial={{
+                            y: -200,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        animate={{
+                            y: 0,
+                            transition: { type: 'spring', duration: 1.5, delay: 1 }
+                        }}
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                    >
                         Work
-                    </h3>
+                    </motion.h2>
                 </WorkContainer>
 
                 <FooterContainer>
 
                     <AboutContainer click={clicked} to="/about">
-                        <h3>
+                        <motion.h2
+                            initial={{
+                                y: 200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
                             About
-                        </h3>
+                        </motion.h2>
                     </AboutContainer>
 
                     <SkillsContainer to="/skills">
-                        <h3>
+                        <motion.h2
+                            initial={{
+                                y: 200,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            animate={{
+                                y: 0,
+                                transition: { type: 'spring', duration: 1.5, delay: 1 }
+                            }}
+                            whileHover={{ scale: 1.1 }}
+                            whileTap={{ scale: 0.9 }}
+                        >
                             Skills
-                        </h3>
+                        </motion.h2>
                     </SkillsContainer>
 
                 </FooterContainer>
 
             </SubContainer>
-            {clicked ? <Intro/> : null}
+            {clicked ? <Intro click={clicked} /> : null}
         </MainContainer>
     )
 }
