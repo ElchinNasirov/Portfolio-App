@@ -63,6 +63,9 @@ const BlogsList = () => {
             }}
         >
             <SubContainer>
+                <Logo />
+                <PowerButton />
+                <SocialIcons />
 
                 <CenterContainer>
                     <GridContainer>
