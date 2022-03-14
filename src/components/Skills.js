@@ -4,6 +4,10 @@ import { ThemeProvider } from "styled-components";
 import { lightTheme } from "./Themes";
 import { DeveloperIcon } from "../subComponents/SVGs";
 
+import Logo from "../subComponents/Logo";
+import SocialIcons from "../subComponents/SocialIcons";
+import PowerButton from "../subComponents/PowerButton";
+
 const Box = styled.div`
 background-color: ${props => props.theme.body};
 width: 100vw;
@@ -78,11 +82,14 @@ const Skills = () => {
     return (
         <ThemeProvider theme={lightTheme}>
             <Box>
+                <Logo />
+                <SocialIcons />
+                <PowerButton />
 
                 <MainContainer>
                     <TitleContainer>
                         <DeveloperIcon width={40} height={40} />
-                        Full Stack Web Develoer
+                        Full Stack Web Developer
                     </TitleContainer>
                     <DescriptionContainer>
                         Full Stack Developer description
@@ -107,7 +114,7 @@ const Skills = () => {
                 <MainContainer>
                     <TitleContainer>
                         <DeveloperIcon width={40} height={40} />
-                        Front End Web Develoer
+                        Front End Web Developer
                     </TitleContainer>
                     <DescriptionContainer>
                         Front End Web Developer description
