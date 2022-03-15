@@ -12,7 +12,7 @@ bottom:0;
 z-index:0;
 `
 
-class Multi extends Component {
+class SkillsParticles extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -69,4 +69,4 @@ class Multi extends Component {
     }
 }
 
-export { Multi };
+export { SkillsParticles };
