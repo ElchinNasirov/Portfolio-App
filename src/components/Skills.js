@@ -7,6 +7,9 @@ import { DeveloperIcon } from "../subComponents/SVGs";
 import Logo from "../subComponents/Logo";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
+// import  SkillsParticles  from "../subComponents/SkillsParticles";
+import  {Multi}  from "../subComponents/SkillsParticles";
+
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -85,6 +88,7 @@ const Skills = () => {
                 <Logo />
                 <SocialIcons />
                 <PowerButton />
+                <Multi />
 
                 <MainContainer>
                     <TitleContainer>
