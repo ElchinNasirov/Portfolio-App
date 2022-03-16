@@ -8,6 +8,7 @@ import Logo from "../subComponents/Logo";
 import SocialIcons from "../subComponents/SocialIcons";
 import PowerButton from "../subComponents/PowerButton";
 import { SkillsParticles } from "../subComponents/SkillsParticles";
+import BigTitle from "../subComponents/BigTitle";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -65,9 +66,7 @@ padding: 0.5rem 0;
 
 
 ${MainContainer}:hover &{
-   
         color:${props => props.theme.body};
-    
 }
 
 strong{
@@ -141,6 +140,7 @@ const Skills = () => {
                 </MainContainer>
 
             </Box>
+            <BigTitle text="SKILLS" top="80%" right="10%" />
         </ThemeProvider>
     )
 }

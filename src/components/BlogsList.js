@@ -77,7 +77,7 @@ const BlogsList = () => {
                     </GridContainer>
                 </CenterContainer>
 
-                <BigTitle text="BLOG" top="5rem" left="5rem" />
+                <BigTitle text="BLOG" top="80%" right="3%" />
             </SubContainer>
         </MainContainer>
     )

@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { ThemeProvider } from 'styled-components'
 import AboutParticles from "../subComponents/AboutParticles";
+import BigTitle from "../subComponents/BigTitle";
 import { darkTheme } from './Themes';
 
 const Box = styled.div`
@@ -41,6 +42,7 @@ const About = () => {
                     About Component
                 </MainContainer>
             </Box>
+            <BigTitle text="ABOUT" top="80%" right="10%" />
         </ThemeProvider>
     )
 }

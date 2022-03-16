@@ -93,20 +93,16 @@ const Intro = () => {
             transition={{ type: 'spring', duration: 2, delay: 1 }}
         >
             <SubBox>
-
                 <LeftTextContainer>
                     <h1>Hi,</h1>
                     <h3>I'm <b>Elchin</b></h3>
                 </LeftTextContainer>
-
             </SubBox>
 
             <SubBox>
-
                 <RightTextContainer>
                     <ReactRotatingText items={['Full Stack Web Developer', "Front End Web Developer", "Software Engineer"]} color="green" />
                 </RightTextContainer>
-
             </SubBox>
         </Box>
     )

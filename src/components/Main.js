@@ -155,7 +155,7 @@ const Main = () => {
                         whileTap={{ scale: 0.9 }}
 
                     >
-                        Say "Hi.."
+                        Contact
                     </motion.h3>
                 </ContactContainer>
 
