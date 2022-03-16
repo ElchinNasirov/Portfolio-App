@@ -77,7 +77,7 @@ const Item = {
     }
 }
 
-const Blog = (props) => {
+const BlogCard = (props) => {
     const {  name, tags, date, imgSrc, link } = props.blog || {};
 
     return (
@@ -103,4 +103,4 @@ const Blog = (props) => {
     )
 }
 
-export default Blog;
+export default BlogCard;

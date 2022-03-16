@@ -6,9 +6,9 @@ import GlobalStyle from "./globalStyles"
 // Components
 import Main from "./components/Main"
 import About from "./components/About"
-import Work from "./components/Work"
 import Skills from "./components/Skills"
-import BlogsList from "./components/BlogsList"
+import Portfolio from "./components/Portfolio"
+import Blog from "./components/Blogs"
 
 function App() {
   return <>
@@ -19,8 +19,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Main}/>
         <Route exact path="/about" component={About}/>
-        <Route exact path="/blog" component={BlogsList}/>
-        <Route exact path="/work" component={Work}/>
+        <Route exact path="/blog" component={Blog}/>
+        <Route exact path="/portfolio" component={Portfolio}/>
         <Route exact path="/skills" component={Skills}/>
       </Switch>
     </ThemeProvider>

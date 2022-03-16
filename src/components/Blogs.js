@@ -5,7 +5,7 @@ import img from "../assets/images/blog-wp.jpg";
 import Logo from '../subComponents/Logo';
 import PowerButton from '../subComponents/PowerButton';
 import SocialIcons from '../subComponents/SocialIcons';
-import Blog from './Blog';
+import BlogCard from './BlogCard';
 import BigTitle from '../subComponents/BigTitle';
 import { Blogs } from "../data/BlogData";
 
@@ -51,7 +51,7 @@ const framerMotion = {
     }
 }
 
-const BlogsList = () => {
+const Blog = () => {
     return (
 
         <MainContainer
@@ -71,7 +71,7 @@ const BlogsList = () => {
                     <GridContainer>
                         {
                             Blogs.map(blog => {
-                                return <Blog key={blog.id} blog={blog} />
+                                return <BlogCard key={blog.id} blog={blog} />
                             })
                         }
                     </GridContainer>
@@ -83,4 +83,4 @@ const BlogsList = () => {
     )
 }
 
-export default BlogsList;
+export default Blog;
