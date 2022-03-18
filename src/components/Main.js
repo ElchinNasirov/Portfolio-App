@@ -91,7 +91,7 @@ text-decoration: none;
 z-index: 1;
 `
 
-const WorkContainer = styled(NavLink)`
+const PortfolioContainer = styled(NavLink)`
 color: ${props => props.click ? props.theme.body : props.theme.text};
 position: absolute;
 top: 50%;
@@ -176,7 +176,7 @@ const Main = () => {
                     </motion.h2>
                 </BlogContainer>
 
-                <WorkContainer click={clicked} to="/work">
+                <PortfolioContainer click={clicked} to="/portfolio">
                     <motion.h2
                         initial={{
                             y: -200,
@@ -189,9 +189,9 @@ const Main = () => {
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                     >
-                        Work
+                        Portfolio
                     </motion.h2>
-                </WorkContainer>
+                </PortfolioContainer>
 
                 <FooterContainer>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Github, LinkedIn } from "./SVGs";
+import { GitHub, LinkedIn } from "./SVGs";
 import {darkTheme} from "../components/Themes"
 
 const IconsContainer = styled.div`
@@ -32,7 +32,7 @@ const SocialIcons = (props) => {
                 </NavLink>
 
                 <NavLink style={{color:"inherit"}} target="_blank" to={{pathname: "https://GitHub.com"}}>
-                    <Github width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
+                    <GitHub width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             <LineContainer color={props.theme}/>
         </IconsContainer>

@@ -34,7 +34,7 @@ export const LinkedIn = (props) => {
     )
 }
 
-export const Github = (props) => {
+export const GitHub = (props) => {
     return (
         <svg
             aria-hidden="true"
