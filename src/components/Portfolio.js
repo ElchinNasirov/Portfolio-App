@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme } from "./Themes";
 import { motion } from "framer-motion";
 import { Projects } from "../data/PortfolioData";
-import { CenterIcon } from "../subComponents/SVGs";
 import PowerButton from "../subComponents/PowerButton";
 import BigTitle from "../subComponents/BigTitle"
 

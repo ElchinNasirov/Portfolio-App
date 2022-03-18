@@ -3,6 +3,7 @@ import styled, { ThemeProvider } from 'styled-components'
 import AboutParticles from "../subComponents/AboutParticles";
 import BigTitle from "../subComponents/BigTitle";
 import { darkTheme } from './Themes';
+import PowerButton from "../subComponents/PowerButton";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -37,6 +38,7 @@ const About = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <Box>
+            <PowerButton/>
             <AboutParticles />
                 <MainContainer>
                     About Component

@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import styled, { keyframes } from "styled-components";
 import { motion } from "framer-motion";
 import Logo from "../subComponents/Logo";
-import PowerButton from "../subComponents/PowerButton";
 import SocialIcons from "../subComponents/SocialIcons";
 import { CenterIcon } from "../subComponents/SVGs";
 import Intro from "./Intro";
@@ -133,7 +132,6 @@ const Main = () => {
             <DarkThemeContainer click={clicked} />
             <SubContainer>
                 <Logo theme={clicked ? "dark" : "light"} />
-                <PowerButton />
                 <SocialIcons theme={clicked ? "dark" : "light"} />
 
                 <CenterContainer click={clicked}>
@@ -153,7 +151,6 @@ const Main = () => {
                         }}
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
-
                     >
                         Contact
                     </motion.h3>
