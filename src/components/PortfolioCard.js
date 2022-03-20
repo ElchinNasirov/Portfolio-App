@@ -97,7 +97,6 @@ const PortfolioCard = (props) => {
 
     return (
         <Box key={id} variants={Item}>
-            <PowerButton />
             <TitleContainer>
                 {name}
             </TitleContainer>
