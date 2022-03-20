@@ -4,6 +4,8 @@ import AboutParticles from "../subComponents/AboutParticles";
 import BigTitle from "../subComponents/BigTitle";
 import { darkTheme } from './Themes';
 import PowerButton from "../subComponents/PowerButton";
+import Logo from "../subComponents/Logo";
+import SocialIcons from "../subComponents/SocialIcons";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -38,8 +40,10 @@ const About = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <Box>
-            <PowerButton/>
-            <AboutParticles />
+                <Logo theme="dark" />
+                <SocialIcons theme="dark" />
+                <PowerButton />
+                <AboutParticles />
                 <MainContainer>
                     About Component
                 </MainContainer>
