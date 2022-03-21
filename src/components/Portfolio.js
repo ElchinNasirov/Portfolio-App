@@ -6,7 +6,9 @@ import { darkTheme } from "./Themes";
 import { motion } from "framer-motion";
 import { Projects } from "../data/PortfolioData";
 import PowerButton from "../subComponents/PowerButton";
-import BigTitle from "../subComponents/BigTitle"
+import BigTitle from "../subComponents/BigTitle";
+import Logo from "../subComponents/Logo";
+import SocialIcons from "../subComponents/SocialIcons";
 
 const Box = styled.div`
 background-color: ${props => props.theme.body};
@@ -77,7 +79,9 @@ const Portfolio = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <Box>
-                <PowerButton/>
+                <Logo theme="dark" />
+                <SocialIcons theme="dark" />
+                <PowerButton />
                 <MainContainer ref={ref} variants={container} initial='hidden' animate='show'>
 
                     {
@@ -87,8 +91,8 @@ const Portfolio = () => {
                     }
 
                 </MainContainer>
-                
-                <Rotate ref={centerIcon}/>
+
+                <Rotate ref={centerIcon} />
 
                 <BigTitle text="PORTFOLIO" top="80%" right="3%" />
             </Box>
