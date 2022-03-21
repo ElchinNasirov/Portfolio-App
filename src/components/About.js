@@ -45,7 +45,14 @@ const About = () => {
                 <PowerButton />
                 <AboutParticles />
                 <MainContainer>
-                    About Component
+                    I'm a Front End Web Developer from  San Francisco. I love to create simple yet beautiful websites with great user experience.
+                    <br /><br />
+                    On a personal level, I am highly-motivated, result oriented, self-driven, hard-working,
+                    fast learner and constantly seeking to improve my skills and am fully aware of the latest Front End Development tools.
+                    <br /><br />
+                    In addition to this, I have the ability to adapt to any type of team environment,
+                    I am team oriented and get along with others when working in a group setting.
+                    I also have the ability to work independently while staying on schedule and meeting those tight deadlines.
                 </MainContainer>
             </Box>
             <BigTitle text="ABOUT" top="80%" right="10%" />
