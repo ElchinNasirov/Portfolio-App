@@ -3,7 +3,6 @@ import React from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { GitHub } from "../subComponents/SVGs";
-import PowerButton from "../subComponents/PowerButton";
 
 const Box = styled(motion.li)`
 width: 16rem;
