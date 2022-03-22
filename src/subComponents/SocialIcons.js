@@ -31,7 +31,7 @@ const SocialIcons = (props) => {
                     <LinkedIn width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
 
-                <NavLink style={{color:"inherit"}} target="_blank" to={{pathname: "https://GitHub.com"}}>
+                <NavLink style={{color:"inherit"}} target="_blank" to={{pathname: "https://github.com/ElchinNasirov"}}>
                     <GitHub width={25} height={25} fill={props.theme === "dark" ? darkTheme.text : darkTheme.body} />
                 </NavLink>
             <LineContainer color={props.theme}/>

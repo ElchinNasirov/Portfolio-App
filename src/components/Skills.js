@@ -101,9 +101,9 @@ const Skills = () => {
                         </strong>
                         <p>
                             Node.js, Express, Knex, SQL, PostgreSQL, Docker, Python, Git CLI, GitHub, VS Code, Vercel, Heroku, Netlify
-
                         </p>
                     </DescriptionContainer>
+                    
                     <DescriptionContainer>
                         <strong>Additional Skills/Tools</strong>
                         <p>
@@ -128,6 +128,7 @@ const Skills = () => {
                             HTML, CSS, JavaScript, React, Redux, Context API, Axios, SASS, Bootstrap etc.
                         </p>
                     </DescriptionContainer>
+
                     <DescriptionContainer>
                         <strong>Additional Skills/Tools</strong>
                         <p>

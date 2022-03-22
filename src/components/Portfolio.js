@@ -91,9 +91,7 @@ const Portfolio = () => {
                     }
 
                 </MainContainer>
-
                 <Rotate ref={centerIcon} />
-
                 <BigTitle text="PORTFOLIO" top="80%" right="3%" />
             </Box>
         </ThemeProvider>
